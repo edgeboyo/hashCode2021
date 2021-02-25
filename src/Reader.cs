@@ -61,6 +61,8 @@ public class Reader
             }
         }
 
+        inf.cars = cars;
+
         return inf;
     }
 

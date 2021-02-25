@@ -9,6 +9,8 @@ public class Info {
     public Node[] nodes;
 
     public Street[] streets;
+
+    public Car[] cars;
     
 
     public Street getStreetByName(string name) {
