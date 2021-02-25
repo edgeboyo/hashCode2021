@@ -32,7 +32,7 @@ public class Node {
         */
         
         string s = "";
-        s += $"{id}\n";
+        s += $"\n{id}";
 
         List<Pair> pairs = new List<Pair>();
         for(int i=0; i<schedule.Length -1; i++){
@@ -51,7 +51,7 @@ public class Node {
         if(pairs.Count == 0)
             return "";
 
-        s += $"{pairs.Count}";
+        s += $"\n{pairs.Count}";
         foreach(var pair in pairs){
             s += $"\n{pair.ToString()}";
         }
