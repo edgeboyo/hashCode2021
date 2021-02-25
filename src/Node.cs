@@ -7,4 +7,5 @@ public class Node {
     public List<Street> streetIn;
     public List<Street> streetOut;
 
+    public List<int> times;
 }
