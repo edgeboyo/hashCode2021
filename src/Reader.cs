@@ -9,24 +9,56 @@ public class Reader
     private StreamReader _sr;
     private int _counter;
 
-    /*
     public Info ReadInfo(string path)
     {
-        _info = new Info();
-
+        Info inf = new Info();
         _sr = new StreamReader(new FileStream(path, FileMode.Open, FileAccess.Read), Encoding.UTF8);
-        _ps = new PizzaStr();
 
-        string[] firstLine = _sr.ReadLine().Split(' ');
+        String[] parse = _sr.ReadLine().Split(' ');
+        int secs = Int32.Parse(parse[0]);
+        int intersect = Int32.Parse(parse[1]);
+        int streetsNo = Int32.Parse(parse[2]);
+        int carsNo = Int32.Parse(parse[3]);
+        int points = Int32.Parse(parse[4]);
 
-        _info.NoPizzas = int.Parse(firstLine[0]);
-        _info.NoTeams2 = int.Parse(firstLine[1]);
-        _info.NoTeams3 = int.Parse(firstLine[2]);
-        _info.NoTeams4 = int.Parse(firstLine[3]);
+        inf.time = secs;
 
-        return _info;
+        Node[] nodes = new Node[intersect];
+
+        Street[] streets = new Street[streetsNo];
+
+        for(int i=0; i<streetsNo; i++) {
+            parse = _sr.ReadLine().Split(' ');
+            int from = Int32.Parse(parse[0]);
+            int to = Int32.Parse(parse[1]);
+
+            string name = parse[2];
+            int takes = Int32.Parse(parse[3]);
+
+            streets[i] = new Street(name, takes, nodes[from], nodes[to]);
+            nodes[from].streetOut.Add(streets[i]);
+            nodes[to].streetIn.Add(streets[i]);
+        }
+
+        inf.nodes = nodes;
+        inf.streets = streets;
+
+        Car[] cars = new Car[carsNo];
+
+        for(int i=0; i<carsNo; i++) {
+            parse = _sr.ReadLine().Split(' ');
+            int howMany = Int32.Parse(parse[0]);
+
+            int q = 1;
+            while(howMany > 0) {
+                Street s = inf.getStreetByName(parse[q++]);
+                cars[i].streets.Add(s);
+                howMany--;
+            }
+        }
+
+        return inf;
     }
-    */
 
     /*
     public Pizza ReadNextPizza()
