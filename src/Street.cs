@@ -1,5 +1,9 @@
+using System;
+using System.Collections.Generic;
+
 public class Street {
 
+    public int id;
     public Street(string _name, int _toCross, Node _goesFrom, Node _goesTo) {
         name = _name;
         toCross = _toCross;
