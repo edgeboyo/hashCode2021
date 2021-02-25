@@ -9,13 +9,18 @@ namespace hashCode2021
             Console.WriteLine("Hello World!");
             Reader r = new Reader();
 
-            Info inf = r.ReadInfo("in/a.txt");
+            Info a = r.ReadInfo("in/a.txt");
+            Info b = r.ReadInfo("in/b.txt");
+            Info c = r.ReadInfo("in/c.txt");
+            Info d = r.ReadInfo("in/d.txt");
+            Info e = r.ReadInfo("in/e.txt");
+            Info f = r.ReadInfo("in/f.txt");
+
+            Brute1 b1 = new Brute1(a);
+            //b1.Do();
 
             Brute2 b2 = new Brute2();
-            b2.compute(inf);
-
-            Brute1 b1 = new Brute1(inf);
-            //b1.Do();
+            b2.compute(a);
         }
     }
 }
