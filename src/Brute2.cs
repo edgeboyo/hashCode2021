@@ -36,13 +36,15 @@ public class Brute2 {
                 bool found = false;
                 foreach(StreetCounter sc in scounter) {
                     if(st == sc.street) {
+                        found = true;
                         if(sc.count == 0 || !sums.ContainsKey(node)) {
                             node.times.Add(0);
+                            break;
                         }
                         moreThanZero = true;
-                        found = true;
                         float calc = MathF.Round(((float) sc.count / (float) sums[node]) * (float) time);
                         node.times.Add((int) calc);
+                        break;
                     }
                 }
                 if(!found){
@@ -77,6 +79,7 @@ public class Brute2 {
 
         foreach(Result res in r) {
             result += res.nodeId +"\n";
+            //Console.WriteLine(res.l.Count);
             result += res.l.Count +"\n";
 
             foreach(NodeResult nr in res.l) {

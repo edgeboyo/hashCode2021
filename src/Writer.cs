@@ -31,4 +31,11 @@ public class Writer
         _sw.Close();
     }
     */
+
+    public static void WriteResult(string line, string file) {
+        StreamWriter _sw = new StreamWriter(file);
+
+        _sw.Write(line);
+    }
+
 }
