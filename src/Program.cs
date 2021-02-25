@@ -9,17 +9,17 @@ namespace hashCode2021
             Reader r = new Reader();
 
             Info a = r.ReadInfo("in/a.txt");
-            //Console.WriteLine("A loaded...");
+            Console.WriteLine("A loaded...");
             Info b = r.ReadInfo("in/b.txt");
-            //Console.WriteLine("B loaded...");
+            Console.WriteLine("B loaded...");
             Info c = r.ReadInfo("in/c.txt");
-            //Console.WriteLine("C loaded...");
+            Console.WriteLine("C loaded...");
             Info d = r.ReadInfo("in/d.txt");
-            //Console.WriteLine("D loaded...");
+            Console.WriteLine("D loaded...");
             Info e = r.ReadInfo("in/e.txt");
-            //Console.WriteLine("E loaded...");
+            Console.WriteLine("E loaded...");
             Info f = r.ReadInfo("in/f.txt");
-            //Console.WriteLine("F loaded...");
+            Console.WriteLine("F loaded...");
 
             Brute1 b1 = new Brute1();
             
