@@ -36,6 +36,8 @@ public class Writer
         StreamWriter _sw = new StreamWriter(file);
 
         _sw.Write(line);
+
+        _sw.Close();
     }
 
 }

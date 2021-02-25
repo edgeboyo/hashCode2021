@@ -21552,3 +21552,41 @@ hagg-hagb 3042
 7062
 2
 hacc-hagc 2897
+haeh-hagc 2173
+7063
+1
+echi-hagd 5070
+7064
+2
+hadg-hage 2173
+hafc-hage 2897
+7065
+1
+hadh-hagf 5070
+7066
+2
+hadf-hagg 3042
+hagb-hagg 2028
+7067
+2
+hadg-hagh 2897
+hafj-hagh 2173
+7068
+2
+hafd-hagi 3169
+haff-hagi 1901
+7069
+2
+hace-hagj 3169
+hadi-hagj 1901
+7070
+2
+haed-haha 3621
+hahb-haha 1449
+7071
+2
+hafg-hahb 1449
+haha-hahb 3621
+7072
+1
+hafi-hahc 5070
