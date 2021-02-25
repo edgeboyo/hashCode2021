@@ -11,14 +11,14 @@ public class Node {
     // schedule for brute 1
     public Street[] schedule;
     public void TryAddToSchedule(Street street, int time){
-        if(schedule[time] == null){
-            schedule[time] = street;
+        if(schedule[time - 1] == null){
+            schedule[time - 1] = street;
         }
     }
     public void PrintSchedule(){
         System.Console.WriteLine($"Node {id}: ");
-        for(int i=0; i<schedule.Length; i++){
-            System.Console.WriteLine($"     {i}: {schedule[i].ToString()}");
+        for(int i=0; i<schedule.Length - 1; i++){
+            System.Console.WriteLine($"       {i + 1} {schedule[i]?.name}");
         }
     }
     
