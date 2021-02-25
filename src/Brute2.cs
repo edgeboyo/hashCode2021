@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class Brute2 {
 
-    public void compute(Info inf) {
+    public string compute(Info inf) {
         List<StreetCounter> scounter = new List<StreetCounter>();
 
         for(int i=0; i<inf.streets.Length; i++) {
@@ -13,13 +13,16 @@ public class Brute2 {
             scounter[i].street = inf.streets[i];
         }
 
-        int sum = 0;
+        Dictionary<Node, int> sums = new Dictionary<Node, int>();
         foreach(Car car in inf.cars) {
             foreach(Street street in car.streets) {
                 foreach(StreetCounter sc in scounter){
                     if(street == sc.street){
                         sc.count++;
-                        sum++;
+                        if(!sums.ContainsKey(street.goesTo)) {
+                            sums.Add(street.goesTo, 0);
+                        }
+                        sums[street.goesTo]++;
                     }
                 }
             }
@@ -33,13 +36,13 @@ public class Brute2 {
                 bool found = false;
                 foreach(StreetCounter sc in scounter) {
                     if(st == sc.street) {
-                        if(sc.count == 0) {
+                        if(sc.count == 0 || !sums.ContainsKey(node)) {
                             node.times.Add(0);
                         }
                         moreThanZero = true;
                         found = true;
-                        double calc = time;
-                        node.times.Add((int)Math.Round(calc/sc.count));
+                        float calc = MathF.Round(((float) sc.count / (float) sums[node]) * (float) time);
+                        node.times.Add((int) calc);
                     }
                 }
                 if(!found){
@@ -80,8 +83,7 @@ public class Brute2 {
                 result += nr.name + " " + nr.num + "\n";
             }
         }
-
-        Console.WriteLine(result);
+        return result;
     }
 }
 
