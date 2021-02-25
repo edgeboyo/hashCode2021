@@ -8,7 +8,7 @@ public class Node {
     public List<Street> streetIn = new List<Street>();
     public List<Street> streetOut = new List<Street>();
 
-    public List<int> times;
+    public List<int> times = new List<int>();
 
     // schedule for brute 1
     public Street[] schedule;
