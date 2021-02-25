@@ -29,7 +29,7 @@ public class Reader
             nodes[i].id = i;
         }
             
-
+        Dictionary<string, Street> dict = new Dictionary<string, Street>();
         Street[] streets = new Street[streetsNo];
 
         for(int i=0; i<streetsNo; i++) {
@@ -44,6 +44,8 @@ public class Reader
             streets[i].id = i;
             nodes[from].streetOut.Add(streets[i]);
             nodes[to].streetIn.Add(streets[i]);
+
+            dict.Add(name, streets[i]);
         }
 
         inf.nodes = nodes;
@@ -59,7 +61,7 @@ public class Reader
 
             int q = 1;
             while(howMany > 0) {
-                Street s = inf.getStreetByName(parse[q++]);
+                Street s = dict[parse[q++]];
                 cars[i].streets.Add(s);
                 howMany--;
             }

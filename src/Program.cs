@@ -13,7 +13,18 @@ namespace hashCode2021
             //Info c = r.ReadInfo("in/c.txt");
             //Info d = r.ReadInfo("in/d.txt");
             //Info e = r.ReadInfo("in/e.txt");
+            Info a = r.ReadInfo("in/a.txt");
+            Console.WriteLine("A loaded...");
+            Info b = r.ReadInfo("in/b.txt");
+            Console.WriteLine("B loaded...");
+            Info c = r.ReadInfo("in/c.txt");
+            Console.WriteLine("C loaded...");
+            Info d = r.ReadInfo("in/d.txt");
+            Console.WriteLine("D loaded...");
+            Info e = r.ReadInfo("in/e.txt");
+            Console.WriteLine("E loaded...");
             Info f = r.ReadInfo("in/f.txt");
+            Console.WriteLine("F loaded...");
 
             Brute1 b1 = new Brute1();
             

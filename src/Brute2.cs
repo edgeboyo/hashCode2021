@@ -43,7 +43,11 @@ public class Brute2 {
                         }
                         moreThanZero = true;
                         float calc = MathF.Round(((float) sc.count / (float) sums[node]) * (float) time);
-                        node.times.Add((int) calc);
+                        int reduce = (int) calc;
+                        if(time % reduce == 0) {
+                            reduce = time / reduce;
+                        }
+                        node.times.Add(reduce);
                         break;
                     }
                 }
