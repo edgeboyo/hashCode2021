@@ -11,6 +11,8 @@ namespace hashCode2021
 
             Info inf = r.ReadInfo("in/a.txt");
 
+            Brute2 b2 = new Brute2();
+            
             Brute1 b1 = new Brute1(inf);
             b1.Do();
         }
