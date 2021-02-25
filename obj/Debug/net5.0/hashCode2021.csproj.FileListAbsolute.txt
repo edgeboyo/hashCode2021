@@ -1,0 +1,16 @@
+C:\Users\Me\Desktop\hashCode2021\bin\Debug\net5.0\hashCode2021.exe
+C:\Users\Me\Desktop\hashCode2021\bin\Debug\net5.0\hashCode2021.deps.json
+C:\Users\Me\Desktop\hashCode2021\bin\Debug\net5.0\hashCode2021.runtimeconfig.json
+C:\Users\Me\Desktop\hashCode2021\bin\Debug\net5.0\hashCode2021.runtimeconfig.dev.json
+C:\Users\Me\Desktop\hashCode2021\bin\Debug\net5.0\hashCode2021.dll
+C:\Users\Me\Desktop\hashCode2021\bin\Debug\net5.0\ref\hashCode2021.dll
+C:\Users\Me\Desktop\hashCode2021\bin\Debug\net5.0\hashCode2021.pdb
+C:\Users\Me\Desktop\hashCode2021\obj\Debug\net5.0\hashCode2021.csprojAssemblyReference.cache
+C:\Users\Me\Desktop\hashCode2021\obj\Debug\net5.0\hashCode2021.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Me\Desktop\hashCode2021\obj\Debug\net5.0\hashCode2021.AssemblyInfoInputs.cache
+C:\Users\Me\Desktop\hashCode2021\obj\Debug\net5.0\hashCode2021.AssemblyInfo.cs
+C:\Users\Me\Desktop\hashCode2021\obj\Debug\net5.0\hashCode2021.csproj.CoreCompileInputs.cache
+C:\Users\Me\Desktop\hashCode2021\obj\Debug\net5.0\hashCode2021.dll
+C:\Users\Me\Desktop\hashCode2021\obj\Debug\net5.0\ref\hashCode2021.dll
+C:\Users\Me\Desktop\hashCode2021\obj\Debug\net5.0\hashCode2021.pdb
+C:\Users\Me\Desktop\hashCode2021\obj\Debug\net5.0\hashCode2021.genruntimeconfig.cache
