@@ -4,13 +4,7 @@ using System.Linq;
 
 public class Brute1{
 
-    public Info info;
-
-    public Brute1(Info info){
-        this.info = info;
-    } 
-
-    public string Do(){
+    public string Do(Info info){
 
         //System.Console.WriteLine($"Time: {info.time}");
 
@@ -61,6 +55,6 @@ public class Brute1{
                 s += n;
             } 
         }
-        return $"{count}\n{s}";
+        return $"{count}{s}";
     }
 }
