@@ -24,8 +24,8 @@ public class Info {
 
 public class Node {
 
-    public List<Street> streetIn;
-    public List<Street> streetOut;
+    public List<Street> streetIn = new List<Street>();
+    public List<Street> streetOut = new List<Street>();
 }
 
 public class Street {
@@ -43,5 +43,5 @@ public class Street {
 }
 
 public class Car {
-    public List<Street> streets;
+    public List<Street> streets = new List<Street>();
 }

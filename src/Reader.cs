@@ -25,6 +25,9 @@ public class Reader
 
         Node[] nodes = new Node[intersect];
 
+        for(int i=0; i<intersect; i++)
+            nodes[i] = new Node();
+
         Street[] streets = new Street[streetsNo];
 
         for(int i=0; i<streetsNo; i++) {
@@ -46,6 +49,7 @@ public class Reader
         Car[] cars = new Car[carsNo];
 
         for(int i=0; i<carsNo; i++) {
+            cars[i] = new Car();
             parse = _sr.ReadLine().Split(' ');
             int howMany = Int32.Parse(parse[0]);
 
