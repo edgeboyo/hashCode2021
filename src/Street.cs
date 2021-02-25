@@ -14,4 +14,5 @@ public class Street {
     public int toCross;
     public Node goesFrom;
     public Node goesTo;
+    
 }
