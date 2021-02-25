@@ -32,6 +32,9 @@ public class Brute2 {
                 bool found = false;
                 foreach(StreetCounter sc in scounter) {
                     if(st == sc.street) {
+                        if(sc.count == 0) {
+                            
+                        }
                         found = true;
                         double calc = time;
                         node.times.Add((int)Math.Round(calc/sc.count));
