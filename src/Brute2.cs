@@ -47,7 +47,7 @@ public class Brute2 {
                         if(time % reduce == 0) {
                             reduce = time / reduce;
                         }
-                        node.times.Add(reduce);
+                        node.times.Add((int) calc);
                         break;
                     }
                 }
