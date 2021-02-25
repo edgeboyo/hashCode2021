@@ -40,7 +40,9 @@ public class Node {
             if(street != null){
                 var p = pairs.Where(t => t.street == street).FirstOrDefault();
                 if(p != null){
-                    p.count++;
+                    if(!(p.count > 0 && p != pairs[0])){
+                        p.count++;
+                    }
                 }
                 else{
                     pairs.Add(new Pair(street, 1));
