@@ -24,8 +24,11 @@ public class Reader
 
         Node[] nodes = new Node[intersect];
 
-        for(int i=0; i<intersect; i++)
+        for(int i=0; i<intersect; i++){
             nodes[i] = new Node();
+            nodes[i].id = i;
+        }
+            
 
         Street[] streets = new Street[streetsNo];
 
@@ -38,6 +41,7 @@ public class Reader
             int takes = Int32.Parse(parse[3]);
 
             streets[i] = new Street(name, takes, nodes[from], nodes[to]);
+            streets[i].id = i;
             nodes[from].streetOut.Add(streets[i]);
             nodes[to].streetIn.Add(streets[i]);
         }
@@ -49,6 +53,7 @@ public class Reader
 
         for(int i=0; i<carsNo; i++) {
             cars[i] = new Car();
+            cars[i].id = i;
             parse = _sr.ReadLine().Split(' ');
             int howMany = Int32.Parse(parse[0]);
 
