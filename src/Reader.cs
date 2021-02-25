@@ -7,7 +7,6 @@ using System.Collections.Generic;
 public class Reader
 {
     private StreamReader _sr;
-    private int _counter;
 
     public Info ReadInfo(string path)
     {
